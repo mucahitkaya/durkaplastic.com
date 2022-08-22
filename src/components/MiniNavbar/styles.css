@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 7em;
+  background-color: #1e1e1e;
+}
+.container div {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+}
+.container .navigation-link {
+  color: #ffffff;
+}
+div a:link {
+  text-decoration: none;
+}
+.first {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation-link {
+    display: none;
+  }
+}
