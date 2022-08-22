@@ -1,8 +1,11 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 1em 7em;
+  align-items: center;
+  height: 35px;
+  padding: 5px 7em;
   background-color: #1e1e1e;
+  overflow: hidden;
 }
 .container div {
   font-family: "Poppins", sans-serif;
@@ -15,12 +18,32 @@
 div a:link {
   text-decoration: none;
 }
-.first {
-  font-size: 12px;
-}
 
-@media screen and (max-width: 600px) {
-  .navigation-link {
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.detail-container {
+  margin: 0 2px;
+}
+.detail-container #icon {
+  font-size: 1.5em;
+}
+.second-container {
+  display: flex;
+  flex-direction: row;
+}
+.second-container a {
+  padding: 0 10px;
+}
+@media screen and (max-width: 400px) {
+  .detail-container #icon {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .detail-container:nth-child(2) {
     display: none;
   }
 }

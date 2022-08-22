@@ -1,4 +1,5 @@
-import MiniNavbar from "./components/MiniNavbar/MiniNavbar";
+import MainNavbar from "./components/mainNavbar/MainNavbar.js";
+import MiniNavbar from "./components/miniNavbar/MiniNavbar";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <MiniNavbar />
+          <MainNavbar />
         </a>
       </header>
     </div>

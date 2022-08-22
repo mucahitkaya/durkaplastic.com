@@ -1,30 +1,57 @@
 import React from "react";
 import "./styles.css";
 
-import { HomeOutlined } from "@ant-design/icons";
+import {
+  PhoneOutlined,
+  EnvironmentOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
 function MiniNavbar(params) {
   return (
     <div className="container">
       <div>
         <a
-          className="navigation-link first"
+          className="navigation-link"
           href="https://goo.gl/maps/MisgNoeY7AGQKjGP8"
           target="_blank"
           rel="noreferrer"
         >
-          Yeşiloba Mahallesi 46103 sokak Uzun Kavak Sanayi Sitesi D.No: 26/A
-          Seyhan/ADANA
+          <div className="inner-container">
+            <div className="detail-container">
+              <EnvironmentOutlined id="icon" />
+            </div>
+            <div className="detail-container">
+              Yeşiloba Mah. Başpınar Sanayi
+            </div>
+          </div>
         </a>
       </div>
-      <div>
+      <div className="second-container">
         <a
-          className="navigation-link second"
+          className="navigation-link"
           href="tel:0532 643 72 33"
           target="_blank"
           rel="noreferrer"
         >
-          <HomeOutlined />
-          0532 643 72 33
+          <div className="inner-container">
+            <div className="detail-container">
+              <PhoneOutlined id="icon" />
+            </div>
+            <div className="detail-container">0532 643 72 33</div>
+          </div>
+        </a>
+        <a
+          className="navigation-link"
+          href="mailto:durkaplasrikmak@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="inner-container">
+            <div className="detail-container">
+              <MailOutlined id="icon" />
+            </div>
+            <div className="detail-container">durkaplastic@hotmail.com</div>
+          </div>
         </a>
       </div>
     </div>
