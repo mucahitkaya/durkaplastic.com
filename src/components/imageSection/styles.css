@@ -32,3 +32,14 @@ p {
   font-weight: 500;
   font-size: 48px;
 }
+
+@media screen and (max-width: 480px) {
+  #linesdc {
+    width: 380px;
+  }
+  p {
+    color: #a1a1a1;
+    font-weight: 500;
+    font-size: 24px;
+  }
+}

@@ -16,7 +16,15 @@ text-decoration: none;} */
   align-items: center;
   padding: 5px 60px;
   height: 65px;
+  border-top: 1px solid #1e1e1e;
   border-bottom: 2px solid #1e1e1e;
+  background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky; /*position fixed tells us to where to stay*/
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .brandcontainer {
   display: flex;

@@ -3,7 +3,7 @@ import logo from "../../images/durkalogo.svg";
 import logoyazi from "../../images/durkayazımavi.svg";
 import { MenuOutlined } from "@ant-design/icons";
 
-function MainNavbar(params) {
+function MainNavbar() {
   return (
     <div className="maincontainer">
       <div className="brandcontainer">

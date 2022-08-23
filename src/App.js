@@ -1,7 +1,7 @@
 import MainNavbar from "./components/mainNavbar/MainNavbar.js";
 import MiniNavbar from "./components/MiniNavbar/MiniNavbar";
 import "./App.css";
-import ImageSection from "./components/imageSection/ImageSection.js";
+import HomePage from "./screens/homepage/Homepage.js";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <MiniNavbar />
         <MainNavbar />
-        <ImageSection />
+        <HomePage />
       </header>
     </div>
   );
