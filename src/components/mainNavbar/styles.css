@@ -12,44 +12,77 @@ text-decoration: none;} */
 .maincontainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0px 10px;
+  padding: 5px 60px;
   height: 65px;
   border-bottom: 2px solid #1e1e1e;
 }
-.durkalogo {
+.brandcontainer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 240px;
+  flex-direction: row;
+}
+.brandcontainer img {
+  width: 100%;
   height: 100%;
 }
-#hamburgermenu {
+.menutitles {
+  display: flex;
+  padding: 5px 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menutitles div {
+  margin: 0 10px;
+}
+.menutitles a {
+  font-size: 1.3em;
+  color: #1e1e1e;
+  position: relative;
+  opacity: 0.9;
+}
+.menutitles a:hover {
+  opacity: 1;
+}
+
+.menutitles a::before {
+  font-size: 1.4em;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #1e1e1e;
+  transition: all 0.45s;
+  color: #3b5fc2;
+  /* border-bottom: 2px solid #3b5fc2; */
+}
+.menutitles a:hover::before {
+  width: 100%;
+}
+
+.menuicon {
   display: none;
 }
 
 @media screen and (max-width: 480px) {
   .maincontainer {
-    display: flex;
-    justify-content: space-between;
-  }
-  .durkalogo {
-    grid-template-columns: 1fr 2fr;
-  }
-  .menucontainer {
-    justify-content: center;
+    padding: 0 0 0 20px;
     align-items: center;
   }
-  #hamburgermenu {
-    display: block;
+  .brandcontainer {
+    width: 200px;
+    height: 100%;
   }
-  .menuitem {
+  .menutitles {
     display: none;
   }
-  img {
-    width: 100%;
-    height: 100%;
+  .menuicon {
+    display: block;
+    font-size: 2em;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 481px) {

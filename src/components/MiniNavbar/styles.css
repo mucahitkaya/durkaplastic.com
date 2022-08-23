@@ -37,7 +37,15 @@ div a:link {
 .second-container a {
   padding: 0 10px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 444px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container div {
+    margin: 8px;
+  }
   .detail-container #icon {
     font-size: 2em;
   }
