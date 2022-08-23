@@ -1,20 +1,15 @@
 import MainNavbar from "./components/mainNavbar/MainNavbar.js";
 import MiniNavbar from "./components/MiniNavbar/MiniNavbar";
 import "./App.css";
+import ImageSection from "./components/imageSection/ImageSection.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <MiniNavbar />
-          <MainNavbar />
-        </a>
+        <MiniNavbar />
+        <MainNavbar />
+        <ImageSection />
       </header>
     </div>
   );
