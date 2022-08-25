@@ -32,3 +32,26 @@ h2 {
   box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.12);
   border-radius: 15px;
 }
+.card:hover {
+  width: 236px;
+  height: 236px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 481px) {
+  .productlistcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+  .card {
+    width: 40%;
+    height: auto;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+  }
+}
