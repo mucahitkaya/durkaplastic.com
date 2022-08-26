@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 .productcontainer {
@@ -14,9 +14,14 @@
   margin: 100px 0;
 }
 h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
   font-weight: 500;
   font-size: 48px;
   color: #1e1e1e;
+  border-bottom: 2px solid #1e1e1e;
 }
 .productlistcontainer {
   display: grid;
