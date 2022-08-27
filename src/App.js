@@ -3,17 +3,22 @@ import MiniNavbar from "./components/MiniNavbar/MiniNavbar";
 import "./App.css";
 import HomePage from "./screens/homepage/Homepage.js";
 import Footer from "./components/footer/footer.js";
+import Comm from "./screens/comm/Comm.js";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <Router>
+      <div className="App">
         <MiniNavbar />
         <MainNavbar />
-        <HomePage />
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="Communication" element={<Comm />}></Route>
+        </Routes>
         <Footer />
-      </header>
-    </div>
+      </div>
+    </Router>
   );
 }
 

@@ -3,12 +3,6 @@ font-family: "Poppins", sans-serif;
 font-size: 1em;
 text-decoration: none;} */
 
-* {
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 .maincontainer {
   display: flex;
   flex-direction: row;
