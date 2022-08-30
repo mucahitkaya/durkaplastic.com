@@ -7,7 +7,7 @@ function HomePage() {
       <ImageSection />
       <div className="productcontainer">
         <div className="titlecontainer">
-          <h2>ÜRÜNLER</h2>
+          <h2 className="titlecontainerstitles">ÜRÜNLER</h2>
         </div>
         <div className="productlistcontainer">
           <div className="card">
@@ -15,7 +15,7 @@ function HomePage() {
               <img alt="20lik Bidon " src={mavibidon} />
             </div>
             <div className="card-image-title">
-              <h3>Gıda Grubu</h3>
+              <h3 className="titlecontainerstitles">Gıda Grubu</h3>
             </div>
           </div>
           <div className="card">
@@ -23,7 +23,7 @@ function HomePage() {
               <img alt="30lik Bidon" src={mavibidon} />
             </div>
             <div className="card-image-title">
-              <h3>Kimya Grubu</h3>
+              <h3 className="titlecontainerstitles">Kimya Grubu</h3>
             </div>
           </div>
           <div className="card">
@@ -31,7 +31,7 @@ function HomePage() {
               <img alt="25lik bidon" src={mavibidon} />
             </div>
             <div className="card-image-title">
-              <h3>Temizlik Grubu</h3>
+              <h3 className="titlecontainerstitles">Temizlik Grubu</h3>
             </div>
           </div>
           <div className="card">
@@ -39,7 +39,7 @@ function HomePage() {
               <img alt="30luk bidon" src={mavibidon} />
             </div>
             <div className="card-image-title">
-              <h3>Tarım Grubu</h3>
+              <h3 className="titlecontainerstitles">Tarım Grubu</h3>
             </div>
           </div>
         </div>
