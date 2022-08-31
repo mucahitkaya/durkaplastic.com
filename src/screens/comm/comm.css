@@ -1,8 +1,96 @@
-.wrapper {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  flex-direction: column;
+.commtitle {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.commtitle h1 {
+  font-weight: 600;
+  border-bottom: 2px solid #1e1e1e;
+}
+.commparagraph {
+  margin: 0 auto;
+  max-width: 68em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 15px;
+  border-right: 2px solid #1e1e1e;
+  border-left: 2px solid #1e1e1e;
+  border-top: 2px solid #1e1e1e;
+}
+.commparagraph p {
+  align-content: center;
+  align-items: center;
+}
 
-  width: 500px;
+.commexp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.commmap {
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+  max-width: 68em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px;
+  border-right: 2px solid #1e1e1e;
+  border-left: 2px solid #1e1e1e;
+  border-bottom: 2px solid #1e1e1e;
+}
+.mapaddress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .commtitle {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .commtitle h1 {
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 2px solid #1e1e1e;
+  }
+  .commparagraph {
+    margin: 0 auto;
+    max-width: 68em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    border-right: 2px solid #1e1e1e;
+    border-left: 2px solid #1e1e1e;
+    border-top: 2px solid #1e1e1e;
+  }
+  .commparagraph p {
+    align-content: center;
+    align-items: center;
+  }
+
+  .commexp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .commmap {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 68em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    border-right: 2px solid #1e1e1e;
+    border-left: 2px solid #1e1e1e;
+    border-bottom: 2px solid #1e1e1e;
+  }
 }

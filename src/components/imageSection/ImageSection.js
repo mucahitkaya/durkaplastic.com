@@ -7,7 +7,7 @@ function ImageSection() {
     <div className="sectioncontainer">
       <img id="anasayfaresmi" alt="şişirme ürünleri" src={cover}></img>
       <div className="linecontainer">
-        <p>PLASTİK BİDON TEDARİKÇİNİZ</p>
+        <p id="line">PLASTİK BİDON TEDARİKÇİNİZ</p>
         <img id="linesdc" alt="linesdc" src={textUnderline}></img>
       </div>
     </div>

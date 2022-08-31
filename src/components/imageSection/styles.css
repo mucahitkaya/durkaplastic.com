@@ -20,7 +20,7 @@
   position: absolute;
   padding-top: 75px;
 }
-p {
+#line {
   color: #a1a1a1;
   font-weight: 500;
   font-size: 48px;
@@ -30,7 +30,7 @@ p {
   #linesdc {
     width: 380px;
   }
-  p {
+  #line {
     color: #a1a1a1;
     font-weight: 500;
     font-size: 24px;

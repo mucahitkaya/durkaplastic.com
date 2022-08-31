@@ -1,14 +1,13 @@
-.container {
+.footercontainer {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
+  justify-content: space-around;
   /* background-color: #3a3a3a; */
   background-color: #1e1e1e;
   height: min-content;
   padding-top: 20px;
 }
-a {
+#footerlink {
   font-size: 1em;
   padding-top: 10px;
   color: #747474;
@@ -17,8 +16,8 @@ a {
   color: #ffffff;
   transition: 0.6s;
 }
-.column {
-  width: min-content;
+.footeritemcolumn {
+  width: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -46,14 +45,14 @@ a {
 }
 
 @media screen and (max-width: 481px) {
-  .container {
+  .footercontainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: space-around;
     height: min-content;
   }
-  .column {
+  .footeritemcolumn {
     flex-direction: column;
   }
 }

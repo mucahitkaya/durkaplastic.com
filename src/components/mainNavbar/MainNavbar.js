@@ -4,7 +4,7 @@ import { MenuOutlined } from "@ant-design/icons";
 
 function MainNavbar() {
   return (
-    <div className="maincontainer">
+    <div className="navbarcontainer">
       <div className="brandcontainer">
         <div className="logo">
           <img src={logo} alt="anasayfalogo" />

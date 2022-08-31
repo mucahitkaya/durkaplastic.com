@@ -6,8 +6,8 @@ function HomePage() {
     <>
       <ImageSection />
       <div className="productcontainer">
-        <div className="titlecontainer">
-          <h2 className="titlecontainerstitles">ÜRÜNLER</h2>
+        <div id="titlecontainer">
+          <h2 id="maintitle">ÜRÜNLER</h2>
         </div>
         <div className="productlistcontainer">
           <div className="card">

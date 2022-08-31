@@ -11,8 +11,8 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div className="container">
-      <div className="column">
+    <div className="footercontainer">
+      <div className="footeritemcolumn">
         <div>
           <h2 className="titles">Durka Hakkında</h2>
           <hr className="titleunderline"></hr>
@@ -25,19 +25,19 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="column">
+      <div className="footeritemcolumn">
         <div>
           <h2 className="titles">Ürün Grupları</h2>
           <hr className="titleunderline"></hr>
         </div>
         <div className="contents">
-          <a>
+          <a id="footerlink">
             <p>
               <CaretRightFilled />
               Şişirme
             </p>
           </a>
-          <a>
+          <a id="footerlink">
             <div>
               <p>
                 <CaretRightFilled />
@@ -47,7 +47,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="column">
+      <div className="footeritemcolumn">
         <div>
           <h2 className="titles">İletişim</h2>
           <hr className="titleunderline"></hr>
@@ -55,6 +55,7 @@ function Footer() {
         <div className="contents">
           <div className="hoverkey">
             <a
+              id="footerlink"
               href="https://goo.gl/maps/MisgNoeY7AGQKjGP8"
               target="_blank"
               rel="noreferrer"
@@ -66,7 +67,7 @@ function Footer() {
           </div>
           <div>
             <div>
-              <a href="tel:0532 643 72 33">
+              <a id="footerlink" href="tel:0532 643 72 33">
                 <PhoneOutlined id="phone" />
                 0532 643 72 33
               </a>

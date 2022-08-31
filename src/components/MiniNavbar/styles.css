@@ -1,4 +1,4 @@
-.container {
+.mininavbarcontainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,12 +7,12 @@
   background-color: #1e1e1e;
   overflow: hidden;
 }
-.container div {
+.mininavbarcontainer div {
   font-family: "Poppins", sans-serif;
   font-size: 1em;
   text-decoration: none;
 }
-.container .navigation-link {
+.mininavbarcontainer .navigation-link {
   color: #ffffff;
 }
 div a:link {
@@ -38,12 +38,12 @@ div a:link {
   padding: 0 10px;
 }
 @media screen and (max-width: 444px) {
-  .container {
+  .mininavbarcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .container div {
+  .mininavbarcontainer div {
     margin: 8px;
   }
   .detail-container #icon {

@@ -8,7 +8,7 @@ import {
 } from "@ant-design/icons";
 function MiniNavbar(params) {
   return (
-    <div className="container">
+    <div className="mininavbarcontainer">
       <div>
         <a
           className="navigation-link"
