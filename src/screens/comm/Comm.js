@@ -37,25 +37,20 @@ function Comm() {
         ></iframe>
 
         <div className="mapaddress">
-          <div>
-            <span id="adres">
-              {" "}
-              <a
-                className="navigation-link"
-                href="https://goo.gl/maps/MisgNoeY7AGQKjGP8"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="inner-container">
-                  <div className="detail-container">
-                    <EnvironmentOutlined id="icon" />
-                  </div>
-                  <div className="detail-container">
-                    Yeşiloba Mah. Başpınar Sanayi
-                  </div>
-                </div>
-              </a>
-            </span>
+          <div className="mapaddressitemcontainer">
+            <a
+              className="navigation-link"
+              href="https://goo.gl/maps/MisgNoeY7AGQKjGP8"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="inner-container">
+                <EnvironmentOutlined id="icon" />
+                <h4>
+                  Adres: <p>Yeşiloba cart curt</p>
+                </h4>
+              </div>
+            </a>
           </div>
           <div>
             <a
@@ -65,10 +60,10 @@ function Comm() {
               rel="noreferrer"
             >
               <div className="inner-container">
-                <div className="detail-container">
-                  <PhoneOutlined id="icon" />
-                </div>
-                <div className="detail-container">0532 643 72 33</div>
+                <PhoneOutlined id="icon" />
+                <h4>
+                  Tel No: <p>0563 765 66 44</p>
+                </h4>
               </div>
             </a>
           </div>
@@ -80,10 +75,10 @@ function Comm() {
               rel="noreferrer"
             >
               <div className="inner-container">
-                <div className="detail-container">
-                  <MailOutlined id="icon" />
-                </div>
-                <div className="detail-container">durkaplastic@hotmail.com</div>
+                <MailOutlined id="icon" />
+                <h4>
+                  Mail Adresi: <p>buralardutluktu@hotmail.com</p>
+                </h4>
               </div>
             </a>
           </div>
