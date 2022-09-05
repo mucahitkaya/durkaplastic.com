@@ -17,14 +17,6 @@
   align-content: center;
   align-items: center;
 }
-
-.commexp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .commmap {
   display: flex;
   margin: 30px auto;
@@ -61,20 +53,29 @@
   font-weight: 400;
   font-size: 18px;
 }
-#icon {
+#commicons {
   padding: 6px;
   font-size: 24px;
   color: #1e1e1e;
 }
+#mapframe {
+  border: 0;
+  width: 70%;
+  height: auto;
+}
 
 @media screen and (max-width: 480px) {
+  .commcontainer {
+    margin: 0 auto;
+    max-width: 480px;
+  }
   .commtitle {
     display: flex;
     justify-content: center;
     margin: 20px 0;
   }
   .commtitle h1 {
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 600;
     border-bottom: 2px solid #1e1e1e;
   }
@@ -85,8 +86,7 @@
     border-left: 1px solid #1e1e1e;
   }
   .commparagraph p {
-    align-content: center;
-    align-items: center;
+    text-align: center;
   }
 
   .commexp {
@@ -98,14 +98,50 @@
 
   .commmap {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin: 30px auto;
-    max-width: 68em;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    height: min-content;
     padding: 15px;
-    border-right: 2px solid #1e1e1e;
-    border-left: 2px solid #1e1e1e;
-    border-bottom: 2px solid #1e1e1e;
+    border-left: 1px solid #1e1e1e;
+  }
+  .mapaddress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 10px;
+  }
+  .mapaddressitemcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .inner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+    padding: 10px 0px;
+  }
+  .inner-container h4 {
+    color: #1e1e1e;
+    font-size: 12px;
+  }
+  .inner-container p {
+    display: inline;
+    color: #1e1e1e;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  #icon {
+    padding: 6px;
+    font-size: 1em;
+    color: #1e1e1e;
+  }
+  #mapframe {
+    border: 0;
+    width: 100%;
+    height: auto;
   }
 }
