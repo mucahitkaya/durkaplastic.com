@@ -1,7 +1,9 @@
 import "./products.css";
 import { DownOutlined, RightOutlined } from "@ant-design/icons";
 import { useState } from "react";
-import mavibidon from "../../images/mavibidon.png";
+
+import ProductCategory from "../../components/productscategory/ProductCategory";
+import ProductInfo from "../../components/productsintro/ProductInfo";
 
 function Products(params) {
   const [isActiveOne, setIsActiveOne] = useState(false);
@@ -75,63 +77,8 @@ function Products(params) {
           )}
         </div>
         <div className="productscontainer">
-          <div className="introcontainer">
-            <div className="introtitle">
-              <h1 className="ppagetitle">Durka Plastik Ürünler</h1>
-            </div>
-            <div className="introarticle">
-              <p className="ppageparagraph">
-                Ulucan Plastik olarak Adana’da Geri Dönüşüm Grubu’nda Rulo Çöp
-                Poşeti, Dökme Çöp Poşeti ve Atlet Geri Dönüşüm Poşetleri,
-                Ambalaj Grubu’nda da özellikle market, bakkal, manav, pazarlar
-                ve fırın gibi işyerlerinde kullanılan Atlet Kesim Poşetler
-                üreterek tedarikçilerimizin hizmetine sunuyoruz.
-              </p>
-            </div>
-          </div>
-
-          <div className="productscategorycontainer">
-            <div className="productscategory">
-              <a href="_blank">
-                <div className="productscategoryimagecontainer">
-                  <img alt="20lik Bidon " src={mavibidon} />
-                </div>
-                <div className="productscategorytitlecontainer">
-                  <h3 className="productscategorytitle">Tarım Grubu</h3>
-                </div>
-              </a>
-            </div>
-            <div className="productscategory">
-              <a href="_blank">
-                <div className="productscategoryimagecontainer">
-                  <img alt="20lik Bidon " src={mavibidon} />
-                </div>
-                <div className="productscategorytitlecontainer">
-                  <h3 className="productscategorytitle">Kimya Grubu</h3>
-                </div>
-              </a>
-            </div>
-            <div className="productscategory">
-              <a href="_blank">
-                <div className="productscategoryimagecontainer">
-                  <img alt="20lik Bidon " src={mavibidon} />
-                </div>
-                <div className="productscategorytitlecontainer">
-                  <h3 className="productscategorytitle">Mutfak Grubu</h3>
-                </div>
-              </a>
-            </div>
-            <div className="productscategory">
-              <a href="_blank">
-                <div className="productscategoryimagecontainer">
-                  <img alt="20lik Bidon " src={mavibidon} />
-                </div>
-                <div className="productscategorytitlecontainer">
-                  <h3 className="productscategorytitle">Temizlik Grubu</h3>
-                </div>
-              </a>
-            </div>
-          </div>
+          <ProductInfo />
+          <ProductCategory />
         </div>
       </div>
     </>
