@@ -6,7 +6,7 @@ import Footer from "./components/footer/footer.js";
 import Comm from "./screens/comm/Comm.js";
 import Products from "./screens/products/Products";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import Mission from "./screens/mission/Mission.js";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="Communication" element={<Comm />}></Route>
           <Route path="Products" element={<Products />}></Route>
+          <Route path="Kurumsal" element={<Mission />}></Route>
         </Routes>
         <Footer />
       </div>

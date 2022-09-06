@@ -1,10 +1,10 @@
-.productscontainer {
+.productspagecontainer {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 100vh;
+  height: min-content;
 }
 
 .sidemenu {
@@ -13,12 +13,6 @@
   align-content: center;
   width: 60%;
   margin: 100px auto;
-  position: -webkit-sticky;
-  position: sticky; /*position fixed tells us to where to stay*/
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
 }
 .menubar {
   width: 100%;
@@ -46,19 +40,94 @@
   padding: 10px;
   font-weight: 500;
 }
+.submenuitemcontainer {
+  height: 40px;
+}
 .submenuitem {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
+  padding: 0px 20px;
   font-size: 1em;
   font-weight: 400;
   border: 1px solid #1e1e1e;
 }
+.submenuitem,
+a:visited {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+.productscontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #1e1e1e;
+  height: min-content;
+}
+.introcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 40px;
+}
+.introtitle {
+  display: flex;
+  justify-content: center;
+}
+.ppagetitle {
+  font-weight: 600;
+  border-bottom: 1px solid #1e1e1e;
+}
+.ppageparagraph {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.ppageparagraph {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+.productscategorycontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  margin: 20px auto;
+}
+.productscategory {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+}
+.productscategory:hover {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
+  transform: 1.3;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.productscategory img {
+  width: 100%;
+}
+.productscategorytitlecontainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.productscategorytitle {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 19px;
+}
 @media screen and (max-width: 480px) {
-  .productscontainer {
+  .productspagecontainer {
     display: flex;
+    align-content: center;
     flex-direction: column;
   }
   .sidemenu {
@@ -94,18 +163,83 @@
     padding: 10px;
     font-weight: 500;
   }
+  .submenuitemcontainer {
+    height: 34px;
+  }
   .submenuitem {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 0 20px;
     font-size: 1em;
     font-weight: 400;
     border: 1px solid #1e1e1e;
   }
-
-  .productspage {
-    color: royalblue;
+  .submenuitem,
+  a:visited {
+    color: #1e1e1e;
+  }
+  .productscontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+  }
+  .introcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .introtitle {
+    display: flex;
+    justify-content: center;
+  }
+  .ppagetitle {
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid #1e1e1e;
+  }
+  .ppageparagraph {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #222;
+  }
+  .ppageparagraph {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .productscategorycontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin: 40px auto;
+  }
+  .productscategory {
+    width: 160px;
+    height: 160px;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+  }
+  .productscategory img {
+    width: 100%;
+  }
+  .productscategorytitlecontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .productscategorytitle {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 19px;
   }
 }
