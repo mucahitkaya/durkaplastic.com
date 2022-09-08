@@ -9,7 +9,7 @@ function HomePage() {
         <div id="titlecontainer">
           <h2 id="maintitle">ÜRÜNLER</h2>
         </div>
-        <div className="productlistcontainer">
+        <div className="homepagecategorys">
           <div className="card">
             <div className="card-image">
               <img alt="20lik Bidon " src={mavibidon} />

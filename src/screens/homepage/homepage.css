@@ -17,7 +17,7 @@
   color: #1e1e1e;
   border-bottom: 2px solid #1e1e1e;
 }
-.productlistcontainer {
+.homepagecategorys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -63,7 +63,7 @@
     align-items: center;
     flex-direction: column;
   }
-  .productlistcontainer {
+  .homepagecategorys {
     display: grid;
     padding: 0 10px;
     grid-template-columns: repeat(2, 1fr);

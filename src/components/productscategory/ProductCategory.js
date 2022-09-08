@@ -1,4 +1,4 @@
-import "./productdetail.css";
+import "./productcategory.css";
 import mavibidon from "../../images/mavibidon.png";
 import { Link } from "react-router-dom";
 
@@ -6,7 +6,7 @@ function ProductDetail() {
   return (
     <div className="productscategorycontainer">
       <div className="productscategory">
-        <Link to="Products/TarimGrubu">
+        <Link to="/TarimGrubu">
           <div className="productscategoryimagecontainer">
             <img alt="20lik Bidon " src={mavibidon} />
           </div>
