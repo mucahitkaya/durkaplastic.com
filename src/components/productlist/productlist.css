@@ -36,7 +36,7 @@
   }
   .productcard {
     width: 160px;
-    height: 160px;
+    height: 180px;
     box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.12);
     border-radius: 15px;
   }
@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 6px 1px;
   }
   .productcardtitlecontainer h3 {
     text-align: center;

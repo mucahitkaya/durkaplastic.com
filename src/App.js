@@ -10,13 +10,22 @@ import Mission from "./screens/mission/Mission.js";
 import TarimGrubu from "./components/tarimgrubu/TarimGrubu.js";
 import ProductList from "./components/productlist/ProductList.js";
 import Product from "./components/product/Product.js";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState(false);
+  let widdi = window.innerWidth;
+  useEffect(() => {
+    if (widdi >= 480) {
+      setActiveMenu(false);
+      console.log("asdasd");
+    }
+  }, [widdi]);
   return (
     <Router>
       <div className="App">
         <MiniNavbar />
-        <MainNavbar />
+        <MainNavbar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/Communication" element={<Comm />}></Route>
