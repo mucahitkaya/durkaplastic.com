@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 function SideNav() {
   const [isActiveOne, setIsActiveOne] = useState(false);
   const [isActiveTwo, setIsActiveTwo] = useState(false);
+  const [isActiveThree, setIsActiveThree] = useState(false);
+  const [isActiveFour, setIsActiveFour] = useState(false);
 
   return (
     <div className="sidemenu">
@@ -56,6 +58,56 @@ function SideNav() {
           <div className="submenuitemcontainer">
             <Link to="/Products" className="submenuitem">
               <p>Deterjan Bidonlarımız</p>
+              <RightOutlined id="productsicon" />
+            </Link>
+          </div>
+        </div>
+      )}
+      <div
+        className={isActiveThree ? "menubaractive" : "menubar"}
+        onClick={(e) => setIsActiveThree(!isActiveThree)}
+      >
+        <a className="menubaritemcategory">
+          <p>Mutfak Grubu</p>
+          <DownOutlined id="productsicon" />
+        </a>
+      </div>
+      {isActiveThree && (
+        <div id="fak">
+          <div className="submenuitemcontainer">
+            <Link to="/Products" className="submenuitem">
+              <p>Yağ Bidonlarımız</p>
+              <RightOutlined id="productsicon" />
+            </Link>
+          </div>
+        </div>
+      )}
+      <div
+        className={isActiveFour ? "menubaractive" : "menubar"}
+        onClick={(e) => setIsActiveFour(!isActiveFour)}
+      >
+        <a className="menubaritemcategory">
+          <p>Temizlik Grubu</p>
+          <DownOutlined id="productsicon" />
+        </a>
+      </div>
+      {isActiveFour && (
+        <div id="fak">
+          <div className="submenuitemcontainer">
+            <Link to="/Products" className="submenuitem">
+              <p>5 lik Çanta Bidon</p>
+              <RightOutlined id="productsicon" />
+            </Link>
+          </div>
+          <div className="submenuitemcontainer">
+            <Link to="/Products" className="submenuitem">
+              <p>5 lik Kule Bidon</p>
+              <RightOutlined id="productsicon" />
+            </Link>
+          </div>
+          <div className="submenuitemcontainer">
+            <Link to="/Products" className="submenuitem">
+              <p>1 lik Dezenfektan Şişe</p>
               <RightOutlined id="productsicon" />
             </Link>
           </div>

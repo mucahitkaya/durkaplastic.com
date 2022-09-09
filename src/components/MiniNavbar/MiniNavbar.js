@@ -1,57 +1,46 @@
 import React from "react";
-import "./styles.css";
+import "./mininavbar.css";
 
 import {
   PhoneOutlined,
-  EnvironmentOutlined,
   MailOutlined,
+  FacebookOutlined,
+  InstagramOutlined,
+  WhatsAppOutlined,
+  EnvironmentOutlined,
 } from "@ant-design/icons";
-function MiniNavbar(params) {
+
+function MiniNavbar() {
   return (
-    <div className="mininavbarcontainer">
-      <div>
-        <a
-          className="navigation-link"
-          href="https://goo.gl/maps/MisgNoeY7AGQKjGP8"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="inner-container">
-            <div className="detail-container">
-              <EnvironmentOutlined id="icon" />
-            </div>
-            <div className="detail-container">
-              Yeşiloba Mah. Başpınar Sanayi
-            </div>
-          </div>
-        </a>
+    <div className="mininavcontainer">
+      <div className="shortcutcontainer">
+        <div>
+          <a id="mininavbaradres" href="https://goo.gl/maps/MisgNoeY7AGQKjGP8">
+            <EnvironmentOutlined id="mininavbaricon" />
+          </a>
+        </div>
+        <div>
+          <a href="mailto:durkaplastic@hotmail.com">
+            <MailOutlined id="mininavbaricon" />
+            <span> durkaplastic@hotmail.com</span>
+          </a>
+        </div>
+        <div>
+          <a href="tel:0532 643 72 33">
+            <PhoneOutlined id="mininavbaricon" />
+            <span>0532 643 72 33</span>
+          </a>
+        </div>
       </div>
-      <div className="second-container">
-        <a
-          className="navigation-link"
-          href="tel:0532 643 72 33"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="inner-container">
-            <div className="detail-container">
-              <PhoneOutlined id="icon" />
-            </div>
-            <div className="detail-container">0532 643 72 33</div>
-          </div>
+      <div className="socialshortcutscontainer">
+        <a href="https://youtube.com">
+          <FacebookOutlined id="socialicons" />
         </a>
-        <a
-          className="navigation-link"
-          href="mailto:durkaplasrikmak@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="inner-container">
-            <div className="detail-container">
-              <MailOutlined id="icon" />
-            </div>
-            <div className="detail-container">durkaplastic@hotmail.com</div>
-          </div>
+        <a href="https://youtube.com">
+          <InstagramOutlined id="socialicons" />
+        </a>
+        <a href="https://youtube.com">
+          <WhatsAppOutlined id="socialicons" />
         </a>
       </div>
     </div>

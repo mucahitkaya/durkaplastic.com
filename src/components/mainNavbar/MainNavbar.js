@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./mainnavbar.css";
 import logo from "../../images/durkalogo.svg";
 import { MenuOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
@@ -9,9 +9,9 @@ function MainNavbar({ activeMenu, setActiveMenu }) {
     <>
       <div className="navbarcontainer ">
         <div className="brandcontainer">
-          <div className="logo">
+          <Link to="/">
             <img src={logo} alt="anasayfalogo" />
-          </div>
+          </Link>
         </div>
         <div className="menucontainer">
           <div className="menutitles">

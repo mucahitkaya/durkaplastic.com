@@ -8,7 +8,9 @@ import Products from "./screens/products/Products";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Mission from "./screens/mission/Mission.js";
 import TarimGrubu from "./components/tarimgrubu/TarimGrubu.js";
-import ProductList from "./components/productlist/ProductList.js";
+import KimyaGrubu from "./components/kimyagrubu/KimyaGrubu.js";
+import MutfakGrubu from "./components/mutfakgrubu/MutfakGrubu.js";
+import TemizlikGrubu from "./components/temizlikgrubu/TemizlikGrubu.js";
 import Product from "./components/product/Product.js";
 import { useEffect, useState } from "react";
 
@@ -34,6 +36,9 @@ function App() {
             <Route index={true} element={<Products />}></Route>
           </Route>
           <Route path="/TarimGrubu" element={<TarimGrubu />}></Route>
+          <Route path="/KimyaGrubu" element={<KimyaGrubu />}></Route>
+          <Route path="/MutfakGrubu" element={<MutfakGrubu />}></Route>
+          <Route path="/TemizlikGrubu" element={<TemizlikGrubu />}></Route>
           <Route path="/TarimGrubu/:id" element={<Product />}></Route>
         </Routes>
         <Footer />

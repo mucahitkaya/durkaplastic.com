@@ -1,11 +1,13 @@
 .footercontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   /* background-color: #3a3a3a; */
   background-color: #1e1e1e;
   height: min-content;
   padding-top: 20px;
+}
+.columncontainer {
+  display: flex;
+  justify-content: space-around;
 }
 #footerlink {
   font-size: 1em;
@@ -43,16 +45,28 @@
   padding-right: 6px;
   color: #747474;
 }
+.social a:visited a:link {
+  color: #747474;
+}
+#socialicons {
+  font-size: 28px;
+  margin: 0px 6px;
+  color: #747474;
+}
 
 @media screen and (max-width: 481px) {
   .footercontainer {
+    height: min-content;
+    margin: 4px auto;
+  }
+  .columncontainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: space-around;
-    height: min-content;
   }
   .footeritemcolumn {
     flex-direction: column;
+    margin: 4px auto;
   }
 }
